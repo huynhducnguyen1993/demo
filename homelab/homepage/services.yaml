@@ -1,0 +1,43 @@
+- Vận hành:
+    - Trang chủ:
+        icon: mdi-view-dashboard-outline
+        href: http://dash.{{HOMEPAGE_VAR_LAB_DOMAIN}}
+        description: Bảng điều khiển homelab
+        server: t9
+        container: t9-homepage
+    - Giám sát:
+        icon: uptime-kuma.png
+        href: http://status.{{HOMEPAGE_VAR_LAB_DOMAIN}}
+        description: Uptime Kuma
+        server: t9
+        container: t9-uptime-kuma
+        widget:
+          type: uptimekuma
+          url: http://uptime-kuma:3001
+          slug: t9
+    - Nhật ký:
+        icon: dozzle.png
+        href: http://logs.{{HOMEPAGE_VAR_LAB_DOMAIN}}
+        description: Log container
+        server: t9
+        container: t9-dozzle
+    - DNS:
+        icon: adguard-home.png
+        href: http://dns.{{HOMEPAGE_VAR_LAB_DOMAIN}}
+        description: AdGuard Home
+        server: t9
+        container: t9-adguard
+
+- Dữ liệu:
+    - PostgreSQL:
+        icon: postgres.png
+        href: http://dash.{{HOMEPAGE_VAR_LAB_DOMAIN}}
+        description: Chỉ mở trong mạng data
+        server: t9
+        container: t9-postgres
+    - Redis:
+        icon: redis.png
+        href: http://dash.{{HOMEPAGE_VAR_LAB_DOMAIN}}
+        description: Chỉ mở trong mạng data
+        server: t9
+        container: t9-redis

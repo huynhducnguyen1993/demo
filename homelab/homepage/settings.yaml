@@ -1,0 +1,15 @@
+title: Homelab D.7 — T9
+description: Điểm vận hành T9
+language: vi
+theme: dark
+color: slate
+headerStyle: clean
+target: _self
+statusStyle: dot
+layout:
+  Vận hành:
+    style: row
+    columns: 3
+  Dữ liệu:
+    style: row
+    columns: 2

@@ -1,0 +1,28 @@
+{
+	auto_https off
+	admin off
+}
+
+http://dash.{$LAB_DOMAIN:t9.lab} {
+	reverse_proxy homepage:3000
+}
+
+http://status.{$LAB_DOMAIN:t9.lab} {
+	reverse_proxy uptime-kuma:3001
+}
+
+http://logs.{$LAB_DOMAIN:t9.lab} {
+	reverse_proxy dozzle:8080
+}
+
+http://dns.{$LAB_DOMAIN:t9.lab} {
+	reverse_proxy adguard:80
+}
+
+http://stacks.{$LAB_DOMAIN:t9.lab} {
+	reverse_proxy dockge:5001
+}
+
+http:// {
+	reverse_proxy homepage:3000
+}
