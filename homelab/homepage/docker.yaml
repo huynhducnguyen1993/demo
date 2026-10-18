@@ -1,0 +1,3 @@
+t9:
+  host: socket-proxy
+  port: 2375

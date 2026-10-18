@@ -1,0 +1,7 @@
+- datetime:
+    text_size: xl
+    format:
+      dateStyle: long
+      timeStyle: short
+      hourCycle: h23
+      timeZone: Asia/Ho_Chi_Minh
